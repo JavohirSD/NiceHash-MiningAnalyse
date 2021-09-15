@@ -4,7 +4,7 @@ Simple interface for analyse NiceHash account mining statistics in private datab
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://core.telegram.org/bots/api)
 
-![alt text](https://github.com/JavohirSD/NiceHash-MiningAnalyse/blob/main/screenshot.png?raw=true)
+![alt text](https://github.com/JavohirSD/NiceHash-MiningAnalyse/blob/main/demo.png?raw=true)
 
 ### Installation
 
