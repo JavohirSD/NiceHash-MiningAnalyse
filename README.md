@@ -9,7 +9,7 @@ Simple interface for analyse NiceHash account mining statistics in private datab
 ### Installation
 
 1. Upload index.php to your Apache or Ngnix web server
-2. Edit database configurations.
+2. Create table and edit database configurations.
 3. Create API keys (https://www.nicehash.com/my/settings/keys)
 4. Enjoy !
 
@@ -17,7 +17,7 @@ Simple interface for analyse NiceHash account mining statistics in private datab
 You can modify database by adding more columns like a 'woker_id', 'speedAccepted', 'rig_id' for future deep analyses and optimisations
 
 ```sql
-CREATE TABLE `likes` (
+CREATE TABLE `history` (
 	`id` INT(11) NOT NULL AUTO_INCREMENT,
 	`profit`  VARCHAR(255) NOT NULL,
 	`power`   VARCHAR(255) NOT NULL,
