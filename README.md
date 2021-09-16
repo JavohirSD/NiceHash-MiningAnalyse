@@ -11,7 +11,8 @@ Simple interface for analyse NiceHash account mining statistics in private datab
 1. Upload index.php to your Apache or Ngnix web server
 2. Create table and edit database configurations.
 3. Create API keys (https://www.nicehash.com/my/settings/keys)
-4. Enjoy !
+4. Create new 1 minute interval cron job for index file URL (https://cron-job.org)
+5. Enjoy !
 
 ### Minimal database structure
 You can modify database by adding more columns like a 'woker_id', 'speedAccepted', 'rig_id' for future deep analyses and optimisations
@@ -21,6 +22,7 @@ CREATE TABLE `history` (
 	`id` INT(11) NOT NULL AUTO_INCREMENT,
 	`profit`  VARCHAR(255) NOT NULL,
 	`power`   VARCHAR(255) NOT NULL,
+	`unpaid`  VARCHAR(255) NOT NULL,
 	`created_date` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	PRIMARY KEY (`id`),
 	UNIQUE INDEX `query_id` (`query_id`)
